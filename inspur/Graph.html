@@ -15,7 +15,7 @@
         var myChart = echarts.init(document.getElementById('main'));
 
         myChart.showLoading();
-        $.get('https://github.com/ecomfe/echarts/blob/master/test/data/product.json', function (webkitDep) {
+        $.get('data/webkit-dep.json', function (webkitDep) {
             myChart.hideLoading();
 
             option = {
