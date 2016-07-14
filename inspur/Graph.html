@@ -13,11 +13,8 @@
     <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('main'));
-        myChart.showLoading();
-        $.get('webkit-dep.json', function (webkitDep)
-        {
-            myChart.hideLoading();
-            option = {
+       
+       option = {
     title : 
     {
         text: '视频推荐',
@@ -249,8 +246,8 @@
         }
     ]
 };
+       
             myChart.setOption(option);
-        });
     </script>
 </body>
 </html>
