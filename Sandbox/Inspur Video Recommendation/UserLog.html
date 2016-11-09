@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="GB2312">
@@ -12,22 +12,18 @@
     <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('main'));
-
         myChart.showLoading();
-
         // 指定图表的配置项和数据
         var base = + new Date(1968, 9, 3);
         var oneDay = 3600 * 1000;
         var date = [];
         var data = [Math.random() * 300];
-
         for (var i = 1; i < 20000; i++)
         {
             var now = new Date(base += oneDay);
             date.push([now.getFullYear(), now.getMonth() + 1, now.getDate()].join('/') + ' ' + [now.getHours(),now.getMinutes()].join(':'));
             data.push(Math.round((Math.random() - 0.5) * 20 + data[i - 1]));
         }
-
         option = {
             tooltip:
             {
@@ -106,8 +102,9 @@
             }
             ]
         };
-
         myChart.setOption(option);
     </script>
 </body>
 </html>
+Contact GitHub API Training Shop Blog About
+© 2016 GitHub, Inc. Terms Privacy Security Status Help
