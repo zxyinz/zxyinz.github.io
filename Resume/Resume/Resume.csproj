@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{5DDF5C79-7905-48EA-A4C2-AF416DFC3E51}</ProjectGuid>
+    <ProjectGuid>{AA1F4A81-C6A2-487C-923E-4BD9B779FE50}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sandbox</RootNamespace>
-    <AssemblyName>Sandbox</AssemblyName>
+    <RootNamespace>Resume</RootNamespace>
+    <AssemblyName>Resume</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -57,43 +57,33 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\UnicomTrainSysDB.mdf" />
-    <Content Include="App_Data\UnicomTrainSysDB_log.ldf">
-      <DependentUpon>UnicomTrainSysDB.mdf</DependentUpon>
-    </Content>
-    <Content Include="css\infoblock.css" />
+    <Content Include="elements.html" />
+    <Content Include="generic.html" />
     <Content Include="index.html" />
-    <Content Include="MachineLearning\index.html" />
-    <Content Include="css\github-light.css" />
-    <Content Include="css\normalize.css" />
-    <Content Include="css\stylesheet.css" />
-    <Content Include="Unicom\demo.aspx" />
-    <Content Include="Unicom\index.html" />
-    <Content Include="Unicom\script\redialog.js" />
-    <Content Include="Unicom\script\searchautocomplete.js" />
-    <Content Include="Unicom\script\myTODO.js" />
-    <Content Include="Unicom\script\placard-move.js" />
-    <Content Include="Unicom\script\ui.js" />
-    <Content Include="Unicom\script\exit_sys_log.js" />
+    <Content Include="Res\css\font-awesome.min.css" />
+    <Content Include="Res\css\ie8.css" />
+    <Content Include="Res\css\ie9.css" />
+    <Content Include="Res\css\main.css" />
+    <Content Include="Res\fonts\fontawesome-webfont.svg" />
+    <Content Include="Res\js\ie\html5shiv.js" />
+    <Content Include="Res\js\ie\respond.min.js" />
+    <Content Include="Res\js\jquery.min.js" />
+    <Content Include="Res\js\jquery.scrollex.min.js" />
+    <Content Include="Res\js\jquery.scrolly.min.js" />
+    <Content Include="Res\js\main.js" />
+    <Content Include="Res\js\skel.min.js" />
+    <Content Include="Res\js\util.js" />
     <Content Include="Web.config" />
-    <Content Include="Website\elements.html" />
-    <Content Include="Website\generic.html" />
-    <Content Include="Website\index.html" />
-    <Content Include="Website\LICENSE.txt" />
-    <Content Include="Website\README.txt" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Unicom\demo.aspx.cs">
-      <DependentUpon>demo.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Unicom\demo.aspx.designer.cs">
-      <DependentUpon>demo.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Unicom\UnicomClass.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Res\fonts\fontawesome-webfont.eot" />
+    <Content Include="Res\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Res\fonts\fontawesome-webfont.woff" />
+    <Content Include="Res\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Res\fonts\FontAwesome.otf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -101,12 +91,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="MachineLearning\css\" />
-    <Folder Include="MachineLearning\script\" />
-    <Folder Include="res\" />
-    <Folder Include="Unicom\css\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -120,9 +105,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>25740</DevelopmentServerPort>
+          <DevelopmentServerPort>59564</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:23696/</IISUrl>
+          <IISUrl>http://localhost:59564/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
